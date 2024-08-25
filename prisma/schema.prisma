@@ -1,0 +1,39 @@
+// This is your Prisma schema file,
+// learn more about it in the docs: https://pris.ly/d/prisma-schema
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "sqlite"
+  url      = env("DATABASE_URL")
+}
+
+
+//Tabela de times
+model FootballTeams {
+  id         Int        @id @default(autoincrement())
+  name       String
+  created_at DateTime
+  updated_at DateTime @updatedAt
+
+  // Foreign Key
+  players FootballPlayers[] 
+}
+
+
+//Tabela de jogadores
+model FootballPlayers {
+
+  id          Int       @id @default(autoincrement())
+  name        String
+  age         Int
+  team_id     Int
+  created_at  DateTime
+  updated_at  DateTime @updatedAt
+
+  //Foreign Key
+  team FootballTeams @relation(fields: [team_id], references: [id]) 
+
+}

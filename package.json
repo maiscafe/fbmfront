@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "prisma": "^5.18.0"
+  },
+  "scripts": {  
+    "dotenv": "dotenv -e .env.local -- npx prisma studio",
+    "generate": "npx prisma generate",
+    "clear:tables": "npx prisma db push --force-reset"
+  },
+  "dependencies": {
+    "@prisma/client": "^5.18.0",
+    "class-validator": "^0.14.1"
+  }
+}

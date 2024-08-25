@@ -1,0 +1,1 @@
+{"version":3,"file":"FootballTeamsDTO.js","sourceRoot":"","sources":["../../src/dto/FootballTeamsDTO.ts"],"names":[],"mappings":";;;AAAA,MAAa,gBAAgB;IAOzB,YACI,EAAU,EACV,IAAY,EACZ,SAAe,EACf,SAAe;QAEf,IAAI,CAAC,EAAE,GAAW,EAAE,CAAC;QACrB,IAAI,CAAC,IAAI,GAAS,IAAI,CAAC;QACvB,IAAI,CAAC,SAAS,GAAI,SAAS,CAAC;QAC5B,IAAI,CAAC,SAAS,GAAI,SAAS,CAAA;IAC/B,CAAC;CACJ;AAlBD,4CAkBC"}

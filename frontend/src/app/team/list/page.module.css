@@ -1,0 +1,110 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.main {
+  padding: 20px;
+}
+
+.titleHome{
+  margin: 15px;
+}
+
+.newPlayerButton {
+  padding: 10px 20px;
+  font-size: 16px;
+  color: white;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin: 15px;
+}
+
+.newPlayerButton:hover {
+  background-color: #0056b3;
+}
+
+.header {
+  display: flex;
+  background-color: #282c34;
+  color: white;
+  text-align: left;
+  font-size: 15px;
+  font-weight: bold;
+  margin: 0;
+  padding: 5px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+
+.titleHome {
+  margin: 15px 0;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table th, .table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+  text-align: left;
+  transition: background-color 0.3s ease;
+}
+
+.table th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+.table tbody tr {
+  transition: background-color 0.3s ease; 
+}
+
+.table tbody tr:hover {
+  background-color: #f0f0f0;
+}
+
+.table tbody tr + tr {
+  border-top: 1px solid #ddd; 
+}
+
+.table tbody td {
+  transition: background-color 0.3s ease; 
+}
+
+.table tbody tr:hover td {
+  background-color: #f0f0f0; 
+}
+
+.editButton, .deleteButton {
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+}
+
+.editButton {
+  background-color: #4caf50;
+  margin: 5px;
+}
+
+.deleteButton {
+  background-color: #f44336; 
+}
+
+.editButton:hover {
+  background-color: #45a049; 
+}
+
+.deleteButton:hover {
+  background-color: #e53935;
+}

@@ -1,0 +1,29 @@
+.main {
+  padding: 20px;
+}
+
+.welcomeMessage {
+  max-width: 800px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.welcomeMessage h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+.welcomeMessage p {
+  margin-bottom: 15px;
+  font-size: 1.2rem;
+}
+
+.welcomeMessage ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.welcomeMessage ul li {
+  margin-bottom: 10px;
+  font-size: 1.1rem;
+}
