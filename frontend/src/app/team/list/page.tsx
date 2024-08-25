@@ -35,12 +35,6 @@ export default function ListTeamsPage() {
                 <td>{team.name}</td>
                 <td>
                   <button
-                    className={styles.editButton}
-                    onClick={() => handleEdit(team.id)}
-                  >
-                    Editar
-                  </button>
-                  <button
                     className={styles.deleteButton}
                     onClick={() => handleDelete(team.id)}
                   >
