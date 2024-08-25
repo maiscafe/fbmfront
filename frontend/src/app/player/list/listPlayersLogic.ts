@@ -13,6 +13,7 @@ type Player = {
   id: number;
   name: string;
   team_id: number;
+  age: number,
   team: Team;
   updated_at: string;
 };

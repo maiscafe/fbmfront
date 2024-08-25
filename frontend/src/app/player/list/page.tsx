@@ -23,6 +23,7 @@ export default function Home() {
             <tr>
               <th>ID</th>
               <th>Nome</th>
+              <th>Idade</th>
               <th>Time</th>
               <th>Ações</th>
               <th>Ultima atualização</th>
@@ -33,6 +34,7 @@ export default function Home() {
               <tr key={player.id}>
                 <td>{player.id}</td>
                 <td>{player.name}</td>
+                <td>{player.age}</td>
                 <td>{player.team.name}</td>
                 <td>
                   <button onClick={() => handleEdit(player.id)} className={styles.editButton}>Editar</button>
