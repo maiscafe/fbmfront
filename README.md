@@ -80,7 +80,7 @@
 	}
 
 ## Times
-`GET /team/list-teams: Retorna a lista de times.`
+`POST /team/list-teams: Retorna a lista de times.`
 > body: {
 	"id": int,
 	"name": string,
