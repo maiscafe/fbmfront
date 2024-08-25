@@ -27,8 +27,80 @@
 
 ### Passos para Instalação
 
-1. **Clone o repositório:**
+**1. Clone o repositório:**
 
-   ```bash
-   git clone https://github.com/seu-usuario/football-manager.git
-   cd football-manager
+`   git clone https://github.com/maiscafe/fbmfront.git`
+
+
+**2. Instale as dependências:**
+>  Atualize em todos os package.json (prisma, backend, frontend)
+`npm install`
+
+ **3. Configure o Banco de Dados:**
+> Verifique o arquivo .env para configurar o banco de dados:
+	DATABASE_URL="file:./dev.db"
+	Realize a migração do Prisma:
+	npm run dotenv para resetar o link com a variável de ambiente se necessário.
+	npx prisma migrate deploy para manter o banco.
+	npx prisma generate para gerar o banco.
+	npm clear:tables para limpar as tabelas'
+	Popule o banco de dados (opcional):
+	npm run dev
+	Inicie o servidor de produção:
+
+##  Rotas da API
+
+### Jogadores
+` POST /player/list-players: Retorna a lista de jogadores.`
+> body: {
+	"id": int,
+	"name": string,
+	"team_id": int
+}
+
+` PUT /player/update-player: Atualiza os dados de um jogador`
+> body: {
+	"id": int,
+	"name": string,
+	"team_id": int,
+	"age": int
+	}
+
+` POST /player/new-player: Cria um novo jogador. `
+> body: {
+	"id": int,
+	"name": string,
+	"team_id": int,
+	"age": int
+}
+
+` DELETE /player/delete-player: Exclui um jogador.  `
+> body: {
+	"id": int
+	}
+
+## Times
+`GET /team/list-teams: Retorna a lista de times.`
+> body: {
+	"id": int,
+	"name": string,
+	"team_id": int
+}
+
+` PUT /team/update-team: Atualiza os dados de um time`
+> body: {
+	"name": string,
+	}
+	
+`POST /team/new-team: Cria um novo time.`
+> body: {
+	"name": string
+	}
+
+`DELETE /team/delete-team: Exclui um time.`
+> body: {
+	"id": int
+	}
+
+Licença
+Este projeto está licenciado sob a Licença MIT.
