@@ -11,7 +11,6 @@ export default function useNewTeam() {
     try {
       await axios.post('http://localhost:3000/team/new-team', { name: teamName });
       
-      // Exibir SweetAlert2 de sucesso
       Swal.fire({
         icon: 'success',
         title: 'Sucesso!',

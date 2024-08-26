@@ -54,7 +54,6 @@ export default function useListPlayersLogic() {
 
 
   const handleDelete = async (id: number) => {
-    // Exibir o Sweet Alert para confirmação
     const result = await Swal.fire({
       title: 'Você tem certeza?',
       text: 'Essa ação é irreversível!',
@@ -71,7 +70,8 @@ export default function useListPlayersLogic() {
         await axios.delete('http://localhost:3000/player/delete-player', {
           data: { id: id }
         });
-        // Atualize a lista de jogadores após a exclusão
+
+        // Atualiza a lista de jogadores após a exclusão
         setPlayers(players.filter(player => player.id !== id));
         Swal.fire(
           'Excluído!',

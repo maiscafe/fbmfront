@@ -37,16 +37,7 @@
 `npm install`
 
  **3. Configure o Banco de Dados:**
-> Verifique o arquivo .env para configurar o banco de dados:
-	DATABASE_URL="file:./dev.db"
-	Realize a migração do Prisma:
-	npm run dotenv para resetar o link com a variável de ambiente se necessário.
-	npx prisma migrate deploy para manter o banco.
-	npx prisma generate para gerar o banco.
-	npm clear:tables para limpar as tabelas'
-	Popule o banco de dados (opcional):
-	npm run dev
-	Inicie o servidor de produção:
+> Mantenha o prisma fora das pastas backend e frontend para não precisar reconfigurar as variáveis
 
 ##  Rotas da API
 
